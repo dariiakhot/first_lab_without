@@ -1,0 +1,90 @@
+body {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+p {
+    margin-bottom: 8px;
+}
+
+.container1 {
+    display: grid;
+    max-height: 95vh;
+    max-width: 45vw;
+    grid-template-columns: repeat(4, [col] 1fr);
+    grid-template-rows: repeat(5, [row] 1fr);
+    
+}
+
+.container2 {
+    display: grid;
+    grid-template-columns: repeat(1, [col] 1fr);
+    grid-template-rows: repeat(6, [row] 1fr);
+    grid-column: col 2 / col 4;
+    grid-row: row 2 /row 5;
+}
+
+.item {
+    display: grid;
+    align-items: center;
+    border-top: 1px solid black;
+    border-right: 1px solid black;
+    font-size: medium;
+    padding: 0px 4px 0px 4px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.item1 {
+    background-color: #ABCDEF;
+    border-left: 1px solid black;
+    grid-column: span 3;
+}
+
+.item2 {
+    background-color: #D0F0C0;
+    grid-row: span 4;
+}
+
+.item3 {
+    background-color: #FFCC99;
+    border-left: 1px solid black;
+    grid-row: row 2 / row 5;
+}
+
+.item4 {
+    background-color: #FFCC99;
+    grid-row: row 1/ row 2;
+}
+
+.item5 {
+    background-color: white;
+    grid-row: row 2/ row 7;
+}
+
+.item6 {
+    display: grid;
+    justify-content: end;
+    background-color: #ABCDEF;
+    grid-column: col 1/ col 5;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.slogan1 {
+    background: white;
+    width: 170px;
+    margin-left: 20px;
+    border: 1px solid black;
+    text-align: end;
+}
+
+.slogan2 {
+    background-color: white;
+    width: 240px;
+    height: 25px;
+    border: 1px solid black;
+    text-align: end;
+    margin-right: 20px;
+}
